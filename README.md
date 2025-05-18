@@ -1,4 +1,4 @@
-#Grok-No-review-mechanism-AI-2API UnlimitedAI代理服务
+# Grok-No-review-mechanism-AI-2API UnlimitedAI代理服务
 <p align="center">
   <b>代理服务 · 完全支持OpenAI API格式</b>
 </p>
@@ -49,8 +49,9 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/unlimited-ai-proxy.git
-cd unlimited-ai-proxy
+git clone [https://github.com/yourusername/unlimited-ai-proxy.git](https://github.com/YUSHENKZ/Grok-No-review-mechanism-AI-2API.git)
+
+cd Grok-No-review-mechanism-AI-2API-main
 
 # 安装依赖
 pip install -r requirements.txt

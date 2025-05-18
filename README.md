@@ -1,10 +1,10 @@
-# Grok-No-review-mechanism-AI-2API UnlimitedAI代理服务
+## Grok-No-review-mechanism-AI-2API UnlimitedAI代理服务
 <p align="center">
   <b>代理服务 · 完全支持OpenAI API格式</b>
 </p>
 
 
-- **完全兼容**: 支持OpenAI标准API格式，可无缝替换现有应用
+- **特点**: 支持OpenAI标准API格式，可无缝替换现有应用
 
 ### 架构概览
 

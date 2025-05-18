@@ -1,0 +1,21 @@
+开始测试安全模块...
+成功导入安全模块: unlimited_proxy.security
+IP封禁功能: True
+IP检查功能: True
+可疑请求检查: True
+速率限制功能: True
+
+IP封禁测试:
+初始状态，IP 192.168.1.100 是否被封禁: False
+
+可疑请求检查:
+正常路径 '/v1/chat/completions' 是否可疑: False
+可疑路径 '/wp-admin/.env' 是否可疑: True
+
+安全统计信息:
+安全配置: {'block_threshold': 10, 'block_duration': 3600, 'rate_limit': {'enabled': True, 'max_rate': 30, 'window': 70}}
+
+白名单功能测试:
+白名单IP列表: {'127.0.0.1', '192.168.1.1'}
+
+测试完成，安全模块功能正常!

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好世界 / Hello World</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            /* 修正：移除了颜色代码前的空格 */
+            background: linear-gradient(to right top, # ff9a9e 
+0%, # fecfef 
+99%, # fecfef 
+100%);
+            color: # 333; 
+/* 深色文字，与浅色背景形成对比 */
+            overflow: hidden; /* 防止动画溢出 */
+        }
+        .container {
+            text-align: center;
+            /* 容器背景调整为稍微不透明的白色，更清晰 */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+            backdrop-filter: blur(8px); /* 毛玻璃效果稍微弱一点 */
+            -webkit-backdrop-filter: blur(8px); /* Safari兼容 */
+        }
+        h1, h2 {
+            margin-top: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+            opacity: 0; /* 初始隐藏 */
+            animation: fadeInScale 1s ease-out forwards; /* 淡入并轻微放大动画 */
+        }
+        h1 {
+            color: # d63031; 
+/* 红色 */
+            animation-delay: 0.5s; /* 延迟动画 */
+        }
+        h2 {
+            color: # 0984e3; 
+/* 蓝色 */
+            margin-top: 30px; /* 增加间隔 */
+            animation-delay: 1s; /* 延迟动画 */
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: # 555; 
+/* 段落文字颜色 */
+            opacity: 0; /* 初始隐藏 */
+            animation: fadeInUp 1s ease-out forwards; /* 从下方淡入动画 */
+        }
+        .chinese-text p {
+             animation-delay: 1s; /* 延迟动画 */
+        }
+        .english-text p {
+             animation-delay: 1.5s; /* 延迟动画 */
+        }
+        /* 动画定义 */
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chinese-text">
+            <h1>你好世界</h1>
+            <p>这是一个中文的问候。</p>
+        </div>
+        <div class="english-text">
+            <h2>Hello World</h2>
+            <p>This is an English greeting.</p>
+        </div>
+                <div class="english-text">
+            <h2>该页面用于开发的对话测试，测试页面在项目根目录</h2>
+            <p>实际使用可以将该端点注释或去除</p>
+        </div>
+    </div>
+</body>
+</html>
